@@ -1,0 +1,133 @@
+﻿
+.footer
+    { background-color:transparent;
+      position:relative;
+      top: 510px;
+      left:20px;
+      height: 50px;
+      width: 1323px;
+      font-family:Impact;
+      font-size:large;
+      border-radius: 10px 10px;
+    }
+.menu
+{
+    font-family:Impact;
+    font-size:medium;
+}
+.login
+{
+font-family:Impact;
+font-size:medium;
+position:relative;
+top:12px;
+}
+.dropdown
+{
+    position:relative;
+top:12px;
+}
+.rises
+{ 
+    left:20px;
+    border-radius: 20px 20px;
+}
+.sosyalmedya
+{
+  height:5px;
+  width:10px;
+  /*margin-top:110px;*/
+  margin-left:590px;
+
+}
+
+.contact
+{   margin-top:110px;
+    margin-left:520px;
+    font-family:Impact;
+    font-size:35px;
+
+}
+.bizeyaz
+{   text-align:center;
+     padding-top:30px;
+     padding-left:0px;
+    font-family:Impact;
+
+
+}
+.slider
+{
+  height:550px;
+  width:800px;
+  position:center;
+}
+.kimdir
+{
+ font-family:Impact;
+ font-size:large;
+ position:center;
+ font-size:18px;
+}
+.kimdirbaslik
+{
+    font-family:Impact;
+    margin-top:40px;
+}
+
+.carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 50%;
+            margin: auto;
+        }
+
+
+.panel1-info {
+    color: gray;
+    background-color:lightgrey;
+    border-color: #bce8f1;
+}
+.panel1-success {
+    color: gray;
+    background-color: lightgrey;
+    border-color: #d6e9c6;
+    clear:both;
+}
+.panel1-heading {
+	background-color: black;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    clear: both;
+    
+}
+.panel1 {
+    margin-bottom: 20px;
+    background-color: ;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+
+
+.album
+{
+  height:30px;
+  width:30px;
+
+  /*margin-top:110px;*/
+  /*margin-left:100px;*/
+  
+}
+
+.albumbaslik
+{
+    margin-top:110px;
+    margin-left:520px;
+    font-family:Impact;
+    font-size:35px;
+}
+

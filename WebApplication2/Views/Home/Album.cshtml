@@ -1,0 +1,45 @@
+﻿@model WebApplication2.Controllers.HomeController.albumler
+@{
+    ViewBag.Title = "Album";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+
+<head>
+
+    @Styles.Render("~/css/style.css")
+</head>
+<body>
+    <div class="container">
+        <div class="albumbaslik">
+            <p>Albümler</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+
+            <div class="container">
+                @foreach (var item in Model.album)
+                {
+                    <div class="col-md-4">
+                        <a href="/Home/albumetik/?id=@item.id">
+                            <img src="@item.resim" style="width:300px; height:300px;" />
+                        </a>
+
+
+
+                    </div>
+
+
+                }
+
+                
+
+            </div>
+        </div>
+    </div>
+        
+
+</body>
+</html>

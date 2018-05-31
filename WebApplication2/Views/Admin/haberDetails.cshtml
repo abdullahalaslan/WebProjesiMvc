@@ -1,0 +1,36 @@
+﻿@model WebApplication2.Models.haber
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Users</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model =>model.baslik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baslik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.icerik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.icerik)
+        </dd>
+
+     
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "haberEdit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "haberIndex")
+</p>

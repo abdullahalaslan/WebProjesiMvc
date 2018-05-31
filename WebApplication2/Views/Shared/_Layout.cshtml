@@ -1,0 +1,96 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.map"> </script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    @Styles.Render("~/css/bootstrap.css")
+    @Styles.Render("~/css/style.css")
+    <link rel="shortcut icon" href="../favicon.ico">
+ 
+    <script type="text/javascript" src="~/js/modernizr.custom.86080.js"></script>
+    
+</head>
+<body>
+    <!--ÜST MENUUUUU-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+              <div class="navbar-brand">
+                  <a>@Html.ActionLink("EMINEM", "Index", "Home") </a>
+
+              </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="menu">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink(WebApplication2.Resources.HomeText.Home, "Index", "Home")</li>
+                        <li>@Html.ActionLink(WebApplication2.Resources.HomeText.About, "Kimdir", "Home")</li>
+                        <li>@Html.ActionLink(WebApplication2.Resources.HomeText.News, "Haber", "Home")</li>
+                        <li>@Html.ActionLink(WebApplication2.Resources.HomeText.Albums, "Album", "Home")</li>
+                        <li>@Html.ActionLink(WebApplication2.Resources.HomeText.Concert, "Konser", "Home")</li>
+                        <li>@Html.ActionLink(WebApplication2.Resources.HomeText.Contact, "iletisim", "Home")</li>
+
+                    </ul>
+
+                    <div class="nav navbar-nav navbar-right col-md-4">
+                        <div class="col-md-9">
+                            <div class="login">
+                              @if (Session["UserName"] == null)
+                              {
+                                
+                                  @Html.ActionLink(WebApplication2.Resources.HomeText.Login, "login", "Home") 
+                                  @Html.ActionLink(WebApplication2.Resources.HomeText.Register, "register", "Home")
+
+                              }
+                              else
+                              {
+                                @Html.ActionLink(WebApplication2.Resources.HomeText.Logout, "Cikis", "Home")
+                              }
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            
+                                <div class="dropdown">
+                                    <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" role="button" aria-expanded="false">Dil/Language <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" role="menu">
+                                        
+                                        <li>@Html.ActionLink("English", "Change", "Language", new { languageSelect = "en" }, null)</li> 
+                                        <li>@Html.ActionLink("Türkçe", "Change", "Language", new { languageSelect = "tr" }, null)</li> 
+                                        
+                                     
+                                    </ul>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+</div>
+        </div>
+    </nav>
+        @RenderBody()
+   
+    <!--FOOTER-->
+    
+     <div class="footer">
+    <footer>
+        <strong class="rises">Copyright &copy;@DateTime.Now.Year RiseSoft Company</strong>
+    </footer>
+    </div>
+   
+</body>
+</html>

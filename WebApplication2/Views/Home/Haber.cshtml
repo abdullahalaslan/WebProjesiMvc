@@ -1,0 +1,36 @@
+﻿@model WebApplication2.Controllers.HomeController.haberler
+@{
+    ViewBag.Title = "Haberler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Haberler</h1>
+<html>
+<head>
+
+</head>
+<body>
+    
+        <div>
+        <div class="col-md-12">
+
+            <div>
+                @foreach (var item in Model.habers)
+                {
+                    <div style="font-family:Impact;font-size:30px;text-align:left">
+                            @item.baslik
+                    </div>
+                    <div style="font-family:Impact;font-size:15px;text-align:left">
+                        @item.icerik
+                    </div>
+
+                }
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

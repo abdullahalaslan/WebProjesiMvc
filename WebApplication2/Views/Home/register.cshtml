@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.map"> </script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    @Styles.Render("~/css/bootstrap.css")
+    @Styles.Render("~/css/style.css")
+</head>
+<body>
+
+    <div class="container">
+
+
+
+        <div class="kayıt">
+
+            <h2>KAYIT OL</h2>
+
+            <form action="/Home/register" method="post" >
+                <ul style="list-style-type:none;" >
+                    
+                    <li>
+                        <label>Ad</label>
+                    </li>
+                    <li>
+                     <input type="text" name="UserName" class="span3">
+                    </li>
+                   
+                    <li>
+                        <label>Soyad</label>
+                    </li>
+                    <li>  
+                         <input type="text" name="UserSurname" class="span3">
+                    </li>
+
+
+                    <li>
+                        <label>Email Adres</label>
+                    </li>
+                    <li>
+                        <input type="email" name="UserEmail" class="span3">
+                    </li>
+                    
+                    <li>
+                        <label>Şifre</label>
+                    </li>
+                    <li>
+                        <input type="password" name="UserPassword" class="span3">
+                    </li>
+                    <br />
+                    <li>
+                        <input type="submit" value="Kaydet" class="btn btn-primary pull-right">
+                    </li>
+                    <li>
+                        <div class="clearfix"></div>
+                    </li>
+                        </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
